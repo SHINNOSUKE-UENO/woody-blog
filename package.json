@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --skipLibCheck true --noEmit",
+    "typecheck:full": "tsc --skipLibCheck false --noEmit",
+    "clean": "git clean -xdf node_modules dist .next"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.14",
@@ -23,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
+    "postcss-load-config": "^6.0.1",
     "typescript": "^5"
   },
   "type": "module"

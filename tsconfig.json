@@ -32,11 +32,11 @@
     "verbatimModuleSyntax": true,
     "forceConsistentCasingInFileNames": true,
 
-     /* 型チェック */
+    /* 型チェック */
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
-    
+
     /* 完全性 */
     "skipLibCheck": true,
 
@@ -45,13 +45,21 @@
       {
         "name": "next"
       }
-    ],
+    ]
   },
 
   /* 型チェックの対象ファイル */
   "include": [
     "eslint.config.mjs",
-    "next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js", ".next/types/**/*.ts", "postcss.config.mjs", ".prettier.config.js"],
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.js",
+    ".next/types/**/*.ts",
+    "postcss.config.mjs",
+    ".prettier.config.mjs"
+  ],
 
   /* 除外するファイル */
   "exclude": ["node_modules", ".next", "dist"]

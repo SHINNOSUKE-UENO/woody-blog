@@ -12,7 +12,8 @@
     "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc,yml,yaml}\" --cache",
     "typecheck": "tsc --skipLibCheck true --noEmit",
     "typecheck:full": "tsc --skipLibCheck false --noEmit",
-    "clean": "git clean -xdf node_modules dist .next"
+    "clean": "git clean -xdf node_modules dist .next",
+    "prepare": "husky"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.14",
@@ -36,6 +37,8 @@
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-unicorn": "^61.0.2",
     "eslint-plugin-unused-imports": "^4.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
     "postcss-load-config": "^6.0.1",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",

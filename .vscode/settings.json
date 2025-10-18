@@ -35,5 +35,6 @@
   "tailwind-fold.autoFold": true,
   "search.exclude": {
     "**/node_modules": true
-  }
+  },
+  "cSpell.userWords": ["CLIENTVAR"]
 }

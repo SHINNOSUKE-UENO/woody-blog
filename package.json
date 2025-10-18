@@ -16,12 +16,14 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@t3-oss/env-nextjs": "^0.13.8",
     "@tailwindcss/postcss": "^4.1.14",
     "next": "15.5.4",
     "postcss": "^8.5.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "tailwindcss": "^4.1.14"
+    "tailwindcss": "^4.1.14",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

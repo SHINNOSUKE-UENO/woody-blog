@@ -29,8 +29,8 @@ jobs:
       - uses: ./.github/actions/setup
         with:
           node-version: ${{ env.NODE_VERSION }}
-          pnpm-version: ${{ env.NPM_VERSION }}
-      - run: pnpm run lint
+          npm-version: ${{ env.NPM_VERSION }}
+      - run: npm run lint
         env:
           DEBUG_MESSAGE: ${{ secrets.PREVIEW_DEBUG_MESSAGE }}
 
@@ -42,8 +42,8 @@ jobs:
       - uses: ./.github/actions/setup
         with:
           node-version: ${{ env.NODE_VERSION }}
-          pnpm-version: ${{ env.NPM_VERSION }}
-      - run: pnpm run format
+          npm-version: ${{ env.NPM_VERSION }}
+      - run: npm run format
 
   typecheck:
     needs: setup
@@ -53,5 +53,5 @@ jobs:
       - uses: ./.github/actions/setup
         with:
           node-version: ${{ env.NODE_VERSION }}
-          pnpm-version: ${{ env.NPM_VERSION }}
-      - run: pnpm run typecheck
+          npm-version: ${{ env.NPM_VERSION }}
+      - run: npm run typecheck

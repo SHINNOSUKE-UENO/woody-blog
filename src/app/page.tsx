@@ -1,11 +1,15 @@
 import { type FC } from "react";
+import { env } from "@/env";
 
 const Page: FC = () => {
+  const message = env.DEBUG_MESSAGE;
+
   return (
     <main>
       <div className="flex justify-center items-center h-screen">
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl font-bold">Hello World</h1>
+          <h1 className="text-2xl font-bold">Hello Galaxy</h1>
+          <p className="text-sm text-gray-500">{message}</p>
         </div>
       </div>
     </main>
